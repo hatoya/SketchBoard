@@ -1,0 +1,50 @@
+/**
+ * foundation/_mixin.scss
+ */
+
+ @mixin positionType($position, $top: 0, $left: 0) {
+    position: $position;
+    top: $top;
+    left: $left;
+}
+
+@mixin marginAuto() {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin clearfix() {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@mixin animationPos($top, $left, $height: auto, $width: auto) {
+    top: $top + px;
+    left: $left + px;
+    width: $width + px;
+    height: $height + px;
+}
+
+@mixin sheepPos($top, $left) {
+    position: absolute;
+    top: $top + px;
+    left: $left + px;
+}
+
+@mixin coverImage() {
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin textOver() {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin small-only() {
+    @media only screen and (max-width: 1024px) {
+        @content;
+    }
+}

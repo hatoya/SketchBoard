@@ -1,0 +1,29 @@
+@keyframes popupAnimation {
+    10%,
+    90% {
+        transform: translateY(-70px);
+        opacity: 1;
+    }
+}
+@keyframes modalAnimation {
+    100% {
+        transform: translateY(5%);
+        opacity: 1;
+    }
+}
+@keyframes favAnimation {
+    10%,
+    90% {
+        opacity: 1;
+    }
+}
+@keyframes rotateAnimation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes fadeinAnimation {
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,27 @@
+.c-sketchList {
+    display: flex;
+    flex-wrap: wrap;
+    &__list {
+        width: calc(100vw / 4);
+        height: calc(100vw / 4);
+        background: black;
+        &:nth-of-type(6n+1) {
+            background: #ffc154;
+        }
+        &:nth-of-type(6n+2) {
+            background: #ffa753;
+        }
+        &:nth-of-type(6n+3) {
+            background: #ec6b56;
+        }
+        &:nth-of-type(6n+4) {
+            background: #b0606d;
+        }
+        &:nth-of-type(6n+5) {
+            background: #673653;
+        }
+        &:nth-of-type(6n+6) {
+            background: #47b39c;
+        }
+    }
+}
